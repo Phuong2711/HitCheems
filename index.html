@@ -11,6 +11,8 @@
             width: 100%;
             height: 100%;
         }
+
+
     </style>
 
     <script type="text/javascript">
@@ -18,6 +20,8 @@
         function hit_cheems(){
             if(index == 1){
                 document.getElementById("sound").play();
+                document.getElementById("background").play();
+
             }
             var imgs = ["Truockhidanh.jpg", "Saukhidanh.jpg"];
             document.getElementById("dog").src = imgs[index];
@@ -34,9 +38,15 @@
 
 
         }
+
+
     </script>
 </head>
 <body>
+
+
     <img src="Truockhidanh.jpg" alt=" " align="center" id="dog" onclick="hit_cheems()">
     <audio src="bonk.mp3" id="sound"></audio>
+    <audio src="background_sound.mp3" id="background" loop="1000"></audio>
+
 </body>
