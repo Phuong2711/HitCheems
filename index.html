@@ -6,6 +6,8 @@
         * {
             margin: 0;
             padding: 0;
+            cursor: url("cusor.png"),auto;
+
         }
         img {
             width: 100%;
@@ -45,7 +47,7 @@
 <body>
 
 
-    <img src="Truockhidanh.jpg" alt=" " align="center" id="dog" onclick="hit_cheems()">
+    <img src="Truockhidanh.jpg" alt=" " align="center" id="dog" onclick="hit_cheems()" onkeyup="hit_cheems()">
     <audio src="bonk.mp3" id="sound"></audio>
     <audio src="background_sound.mp3" id="background" loop="1000"></audio>
 
